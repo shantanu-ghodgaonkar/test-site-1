@@ -1,13 +1,33 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+let myImg = document.querySelector('img');
 
-alert("Hello!\nPress \"OK\" to continue!");
-
-function multiply(n1, n2)
-{
-	return n1 * n2;
+myImg.onclick = function(){
+	let mySrc = myImg.getAttribute('src');
+	if(mySrc === 'images/Edit3_DSC_0395-1.jpg')
+		myImg.setAttribute('src', 'images/IMG_20190425_120636_SQR.jpg');
+	else
+		myImg.setAttribute('src', 'images/Edit3_DSC_0395-1.jpg');
 }
 
-document.querySelector('html').onclick = function() {
-    alert('Ouch! Stop poking me!');
+let myBtn = document.querySelector('button');
+let myH2 = document.querySelector('h2');
+
+function setUserName(){
+	let myName = prompt('Please enter your name:');
+	if(!myName)
+		setUserName();
+	else{
+		localStorage.setItem('name', myName);
+		myH2.textContent = 'Hello ' + myName + '!';
+	}
+}
+
+if(!localStorage.getItem('name'))
+	setUserName();
+else{
+	let storedName = localStorage.getItem('name');
+	myH2.textContent = 'Hello ' + storedName + '!';
+}
+
+myBtn.onclick = function(){
+	setUserName();
 }

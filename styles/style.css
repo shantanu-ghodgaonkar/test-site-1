@@ -3,7 +3,7 @@ html {
 }
 body {
 	width: 1000px;
-	margin: 25px auto;
+	margin: auto;
 	padding: 0 20px 20px 20px;
 	border: 5px solid black;
 	background-color: #FF8991;
@@ -18,6 +18,12 @@ h1 {
 	border: 2.5px solid black;
 	font-size: 60px;
 	font-family: 'Bangers', cursive;
+}
+h2 {
+	letter-spacing: 1px;
+	color: #008416;
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
 }
 p {
 	/*font-family: 'Cedarville Cursive', cursive;*/
@@ -44,4 +50,5 @@ img {
 	border: 2.5px solid black;
 	margin: 20px auto 5px;
 	width: 250px;
+	height: 300px;
 }
