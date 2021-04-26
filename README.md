@@ -1,2 +1,2 @@
 # test-site-1
-HTML CSS Tester
+HTML CSS JS Tester
