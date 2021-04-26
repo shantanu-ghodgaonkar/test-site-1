@@ -1,0 +1,17 @@
+/* h1{
+	color: #F90004;
+	width: 450px;
+	border: 10px solid yellow;
+}
+p {
+	color: #48BF3F;
+}
+
+ul {
+	color: #F500F9
+	
+} */
+
+h1, p, ul {
+	color: #F90004
+}
