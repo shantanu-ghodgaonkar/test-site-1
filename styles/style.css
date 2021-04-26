@@ -1,5 +1,5 @@
 html {
-	background-color: #9B9B9B
+	background-color: #9B9B9B;
 }
 body {
 	width: 1000px;
@@ -26,7 +26,7 @@ h2 {
 	padding: 0 20px 20px 20px;
 }
 p {
-	/*font-family: 'Cedarville Cursive', cursive;*/
+	font-family: 'Merriweather', serif;
 	font-size: 30px;
 	/*line-height: 1;*/
 	letter-spacing: 1px;
