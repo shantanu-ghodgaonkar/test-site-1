@@ -8,7 +8,7 @@ myImg.onclick = function(){
 		myImg.setAttribute('src', 'images/Edit3_DSC_0395-1.jpg');
 }
 
-let myBtn = document.querySelector('button');
+let myBtn = document.querySelector('.cusr');
 let myH2 = document.querySelector('h2');
 
 function setUserName(){
@@ -31,3 +31,9 @@ else{
 myBtn.onclick = function(){
 	setUserName();
 }
+
+let btnSkil = document.querySelector('.skil');
+btnSkil.onclick = function(){
+	window.location.href='skills/index.html';
+}
+	
